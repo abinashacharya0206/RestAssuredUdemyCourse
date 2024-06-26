@@ -1,0 +1,36 @@
+{
+  "type": "array",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "",
+  "minItems": 1,
+  "uniqueItems": true,
+  "items": {
+    "type": "object",
+    "required": [
+      "id",
+      "name",
+      "age",
+      "department",
+      "salary"
+    ],
+    "properties": {
+      "id": {
+        "type": "number"
+      },
+      "name": {
+        "type": "string",
+        "minLength": 1
+      },
+      "age": {
+        "type": "number"
+      },
+      "department": {
+        "type": "string",
+        "minLength": 1
+      },
+      "salary": {
+        "type": "number"
+      }
+    }
+  }
+}

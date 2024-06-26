@@ -1,0 +1,12 @@
+[{
+        "name": "Marie Marie",
+        "age": 30,
+        "department": "R&D",
+        "salary": 35000.00
+    },
+    {
+        "name": "Manik Manik",
+        "age": 30,
+        "department": "Chemist",
+        "salary": 40000.00
+    }]

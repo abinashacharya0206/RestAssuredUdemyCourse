@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-05-30T12:42:18 IST" name="Default suite" finished-at="2024-05-30T12:42:20 IST" duration-ms="1900">
+    <groups>
+    </groups>
+    <test started-at="2024-05-30T12:42:18 IST" name="Default test" finished-at="2024-05-30T12:42:20 IST" duration-ms="1900">
+      <class name="abinash.preparation.restAssured.JsonSchemaValidation">
+        <test-method signature="validate_myAPI()[pri:0, instance:abinash.preparation.restAssured.JsonSchemaValidation@4f80542f]" started-at="2024-05-30T12:42:18 IST" name="validate_myAPI" finished-at="2024-05-30T12:42:20 IST" duration-ms="1849" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[1 expectation failed.
+Response body doesn't match expectation.
+Expected: The content to match the given JSON schema.
+error: instance type (number) does not match any allowed primitive type (allowed: ["string"])
+    level: "error"
+    schema: {"loadingURI":"#","pointer":"/items/properties/salary"}
+    instance: {"pointer":"/0/salary"}
+    domain: "validation"
+    keyword: "type"
+    found: "number"
+    expected: ["string"]
+
+  Actual: [{"id":1,"name":"John Doe","age":30,"department":"HR","salary":50000.00},{"id":2,"name":"Alice Smith","age":35,"department":"Engineering","salary":60000.00},{"id":3,"name":"Bob Johnson","age":28,"department":"Marketing","salary":55000.00},{"id":4,"name":"Emily Brown","age":32,"department":"Sales","salary":52000.00},{"id":5,"name":"Michael Lee","age":40,"department":"Finance","salary":70000.00},{"id":6,"name":"Pat Cummins","age":31,"department":"Cricket","salary":20000.00},{"id":7,"name":"Sunil Narine","age":36,"department":"Cricket","salary":21000.00},{"id":8,"name":"Sunil Mhatre","age":45,"department":"Football","salary":55000.00},{"id":9,"name":"Sunil Kharge","age":48,"department":"Baseball","salary":20000.00},{"id":10,"name":"Marie Curie","age":30,"department":"R&D","salary":35000.00},{"id":11,"name":"Manik Chand","age":30,"department":"Chemist","salary":40000.00},{"id":12,"name":"Danavira","age":30,"department":"Druggist","salary":30000.00},{"id":13,"name":"Manik Chand","age":30,"department":"Chemist","salary":40000.00},{"id":14,"name":"Marie Marie","age":30,"department":"R&D","salary":35000.00},{"id":15,"name":"Manik Manik","age":30,"department":"Chemist","salary":40000.00}]
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: 1 expectation failed.
+Response body doesn't match expectation.
+Expected: The content to match the given JSON schema.
+error: instance type (number) does not match any allowed primitive type (allowed: ["string"])
+    level: "error"
+    schema: {"loadingURI":"#","pointer":"/items/properties/salary"}
+    instance: {"pointer":"/0/salary"}
+    domain: "validation"
+    keyword: "type"
+    found: "number"
+    expected: ["string"]
+
+  Actual: [{"id":1,"name":"John Doe","age":30,"department":"HR","salary":50000.00},{"id":2,"name":"Alice Smith","age":35,"department":"Engineering","salary":60000.00},{"id":3,"name":"Bob Johnson","age":28,"department":"Marketing","salary":55000.00},{"id":4,"name":"Emily Brown","age":32,"department":"Sales","salary":52000.00},{"id":5,"name":"Michael Lee","age":40,"department":"Finance","salary":70000.00},{"id":6,"name":"Pat Cummins","age":31,"department":"Cricket","salary":20000.00},{"id":7,"name":"Sunil Narine","age":36,"department":"Cricket","salary":21000.00},{"id":8,"name":"Sunil Mhatre","age":45,"department":"Football","salary":55000.00},{"id":9,"name":"Sunil Kharge","age":48,"department":"Baseball","salary":20000.00},{"id":10,"name":"Marie Curie","age":30,"department":"R&D","salary":35000.00},{"id":11,"name":"Manik Chand","age":30,"department":"Chemist","salary":40000.00},{"id":12,"name":"Danavira","age":30,"department":"Druggist","salary":30000.00},{"id":13,"name":"Manik Chand","age":30,"department":"Chemist","salary":40000.00},{"id":14,"name":"Marie Marie","age":30,"department":"R&D","salary":35000.00},{"id":15,"name":"Manik Manik","age":30,"department":"Chemist","salary":40000.00}]
+
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
+at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
+at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:57)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
+at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:696)
+at io.restassured.internal.ResponseSpecificationImpl.this$2$validateResponseIfRequired(ResponseSpecificationImpl.groovy)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:198)
+at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62)
+at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:49)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:171)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+at io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:107)
+at io.restassured.internal.ValidatableResponseOptionsImpl.body(ValidatableResponseOptionsImpl.java:238)
+at abinash.preparation.restAssured.JsonSchemaValidation.validate_myAPI(JsonSchemaValidation.java:27)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validate_myAPI -->
+      </class> <!-- abinash.preparation.restAssured.JsonSchemaValidation -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

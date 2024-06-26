@@ -1,0 +1,13 @@
+{
+	"request": {
+		"method": "GET",
+		"url": "/Employee/AllEmployees"
+	},
+	"response": {
+		"status": 200,
+		"body": "this is a mock response",
+"headers": {
+"Content-Type": "text/plain"
+	}
+}
+}
